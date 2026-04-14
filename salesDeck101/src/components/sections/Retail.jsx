@@ -57,11 +57,11 @@ export default function Retail() {
             >
               <div
                 className="mb-4"
-                style={{ width: 24, height: 1, background: 'var(--gold)', opacity: 0.5 }}
+                style={{ width: 24, height: 1, background: 'var(--red)', opacity: 0.5 }}
               />
               <p
                 className="font-display text-white mb-2"
-                style={{ fontSize: '1.8rem', fontWeight: 300, color: 'var(--gold)' }}
+                style={{ fontSize: '1.8rem', fontWeight: 300, color: 'var(--red)' }}
               >
                 {cat.count}
               </p>
@@ -96,7 +96,7 @@ export default function Retail() {
                   fontSize: '1.2rem',
                   fontWeight: 300,
                   fontStyle: 'italic',
-                  color: i % 3 === 0 ? 'var(--gold)' : 'rgba(255,255,255,0.3)',
+                  color: i % 3 === 0 ? 'var(--red)' : 'rgba(255,255,255,0.3)',
                   flexShrink: 0,
                 }}
               >

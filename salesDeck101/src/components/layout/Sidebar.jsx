@@ -5,51 +5,44 @@ export default function Sidebar({ activeSection }) {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  return (
-    <div
-      className="fixed right-8 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col items-center gap-4"
-    >
-      {navItems.map((item) => {
-        const isActive = activeSection === item.id
-        return (
-          <button
-            key={item.id}
-            onClick={() => scrollTo(item.id)}
-            className="group flex items-center gap-3 transition-all duration-300"
-            title={item.label}
-            style={{ background: 'none', border: 'none' }}
+return (
+  <div className="fixed right-8 top-1/2 -translate-y-1/2 z-40 hidden lg:flex flex-col items-end gap-5">
+    {navItems.map((item) => {
+      const isActive = activeSection === item.id
+
+      return (
+        <button
+          key={item.id}
+          onClick={() => scrollTo(item.id)}
+          className="group flex items-center gap-3"
+        >
+          {/* TEXT */}
+          <span
+            className={`
+              text-[10px] tracking-[0.15em] font-semibold uppercase
+              transition-all duration-300
+              ${isActive 
+                ? "text-red-500 opacity-100 translate-x-0" 
+                : "text-white/30 opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0"
+              }
+            `}
           >
-            {/* Label */}
-            <span
-              className="text-right transition-all duration-300"
-              style={{
-                fontSize: '0.58rem',
-                letterSpacing: '0.15em',
-                fontFamily: 'Syne, sans-serif',
-                fontWeight: 600,
-                textTransform: 'uppercase',
-                color: isActive ? 'var(--gold)' : 'rgba(255,255,255,0.25)',
-                opacity: isActive ? 1 : 0,
-                transform: `translateX(${isActive ? '0' : '8px'})`,
-                transition: 'all 0.3s ease',
-              }}
-            >
-              {item.label}
-            </span>
-            {/* Dot */}
-            <div
-              style={{
-                width: isActive ? 6 : 4,
-                height: isActive ? 6 : 4,
-                borderRadius: '50%',
-                background: isActive ? 'var(--gold)' : 'rgba(255,255,255,0.3)',
-                transition: 'all 0.3s ease',
-                boxShadow: isActive ? '0 0 8px rgba(201,169,110,0.6)' : 'none',
-              }}
-            />
-          </button>
-        )
-      })}
-    </div>
-  )
+            {item.label}
+          </span>
+
+          {/* DOT */}
+          <div
+            className={`
+              w-2 h-2 rounded-full transition-all duration-300
+              ${isActive 
+                ? "bg-red-500 scale-125 shadow-[0_0_8px_rgba(255,0,0,0.6)]" 
+                : "bg-white/30 group-hover:bg-white"
+              }
+            `}
+          />
+        </button>
+      )
+    })}
+  </div>
+)
 }

@@ -49,7 +49,7 @@ export default function Dining() {
               <div
                 className="absolute top-0 left-0 right-0 h-px"
                 style={{
-                  background: 'linear-gradient(90deg, var(--gold), transparent)',
+                  background: 'linear-gradient(90deg, var(--red), transparent)',
                   transform: 'scaleX(0)',
                   transformOrigin: 'left',
                   transition: 'transform 0.5s ease',
@@ -59,7 +59,7 @@ export default function Dining() {
 
               <span
                 className="font-body mb-3 block"
-                style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)' }}
+                style={{ fontSize: '0.6rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--red)' }}
               >
                 Zone 0{i + 1}
               </span>
@@ -83,7 +83,7 @@ export default function Dining() {
                   fontSize: '0.65rem',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
-                  color: 'var(--gold)',
+                  color: 'var(--red)',
                   fontFamily: 'Syne, sans-serif',
                 }}
               >
@@ -104,7 +104,7 @@ export default function Dining() {
           <div>
             <p className="font-display text-white mb-2" style={{ fontSize: '1.8rem', fontWeight: 300 }}>
               Dining with a{' '}
-              <em style={{ color: 'var(--gold)' }}>view no other mall can offer.</em>
+              <em style={{ color: 'var(--red)' }}>view no other mall can offer.</em>
             </p>
             <p className="font-body" style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.4)', lineHeight: 1.6 }}>
               Outdoor terrace restaurants overlooking the Burj Khalifa and the
@@ -113,7 +113,7 @@ export default function Dining() {
             </p>
           </div>
           <div style={{ flexShrink: 0, textAlign: 'right' }}>
-            <p className="font-display" style={{ fontSize: '2.5rem', fontWeight: 300, color: 'var(--gold)' }}>200+</p>
+            <p className="font-display" style={{ fontSize: '2.5rem', fontWeight: 300, color: 'var(--red)' }}>200+</p>
             <p className="section-label" style={{ fontSize: '0.6rem' }}>F&B concepts</p>
           </div>
         </div>

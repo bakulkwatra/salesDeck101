@@ -49,7 +49,7 @@ function StatCard({ value, suffix, label, description, index }) {
             fontFamily: 'Cormorant Garamond, serif',
             fontSize: 'clamp(2.8rem, 5vw, 4rem)',
             fontWeight: 300,
-            color: 'var(--gold)',
+            color: 'var(--red)',
             lineHeight: 1,
           }}
         >
@@ -60,7 +60,7 @@ function StatCard({ value, suffix, label, description, index }) {
             fontFamily: 'Cormorant Garamond, serif',
             fontSize: 'clamp(1.5rem, 2.5vw, 2rem)',
             fontWeight: 300,
-            color: 'var(--gold)',
+            color: 'var(--red)',
             lineHeight: 1,
             paddingBottom: '0.3rem',
           }}
@@ -85,7 +85,7 @@ function StatCard({ value, suffix, label, description, index }) {
       {/* Hover glow dot */}
       <div
         className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--gold)', boxShadow: '0 0 12px var(--gold)' }}
+        style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--red)', boxShadow: '0 0 12px var(--red)' }}
       />
     </div>
   )
@@ -116,7 +116,7 @@ export default function WhyThisProperty() {
           >
             The Most Visited
             <br />
-            <em style={{ color: 'var(--gold)', fontStyle: 'italic' }}>Destination on Earth.</em>
+            <em style={{ color: 'var(--red)', fontStyle: 'italic' }}>Destination on Earth.</em>
           </h2>
 
           <p
@@ -148,7 +148,7 @@ export default function WhyThisProperty() {
         <div
           className="reveal mt-20 p-10 opacity-0"
           style={{
-            borderLeft: '1px solid var(--gold)',
+            borderLeft: '1px solid var(--red)',
             background: 'linear-gradient(90deg, rgba(201,169,110,0.05) 0%, transparent 100%)',
           }}
         >

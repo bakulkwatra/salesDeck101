@@ -66,7 +66,7 @@ export default function Loader({ onComplete }) {
 
       {/* Logo */}
       <div ref={logoRef} className="text-center opacity-0 mb-16 relative z-10">
-        <p className="section-label mb-4" style={{ color: 'var(--gold)', letterSpacing: '0.3em' }}>
+        <p className="section-label mb-4" style={{ color: 'var(--red)', letterSpacing: '0.3em' }}>
           THE
         </p>
         <h1
@@ -77,7 +77,7 @@ export default function Loader({ onComplete }) {
         </h1>
         <div className="flex items-center justify-center gap-3 mt-4">
           <div className="gold-line" />
-          <span className="section-label" style={{ color: 'var(--gold-light)', fontSize: '0.6rem' }}>
+          <span className="section-label" style={{ color: 'var(--red-light)', fontSize: '0.6rem' }}>
             SALES EXPERIENCE
           </span>
           <div className="gold-line" />
@@ -95,7 +95,7 @@ export default function Loader({ onComplete }) {
             style={{
               height: '100%',
               width: '0%',
-              background: 'linear-gradient(90deg, var(--gold-dim), var(--gold))',
+              background: 'linear-gradient(90deg, var(--red-dim), var(--red))',
               transition: 'width 0.05s linear',
             }}
           />
@@ -104,7 +104,7 @@ export default function Loader({ onComplete }) {
           <span className="section-label" style={{ fontSize: '0.6rem', color: 'var(--muted)' }}>
             Loading
           </span>
-          <span className="section-label" style={{ fontSize: '0.6rem', color: 'var(--gold)' }}>
+          <span className="section-label" style={{ fontSize: '0.6rem', color: 'var(--red)' }}>
             {progress}%
           </span>
         </div>

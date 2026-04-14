@@ -87,7 +87,7 @@ export default function Luxury() {
                 <div className="flex items-start gap-6">
                   <span
                     className="font-display"
-                    style={{ fontSize: '0.8rem', color: 'var(--gold)', fontStyle: 'italic', minWidth: 24 }}
+                    style={{ fontSize: '0.8rem', color: 'var(--red)', fontStyle: 'italic', minWidth: 24 }}
                   >
                     0{i + 1}
                   </span>

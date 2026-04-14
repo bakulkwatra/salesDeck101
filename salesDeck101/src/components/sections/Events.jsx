@@ -18,7 +18,7 @@ export default function Events() {
         style={{
           width: '60%',
           height: '1px',
-          background: 'linear-gradient(90deg, transparent, var(--gold), transparent)',
+          background: 'linear-gradient(90deg, transparent, var(--red), transparent)',
           opacity: 0.6,
         }}
       />
@@ -58,13 +58,13 @@ export default function Events() {
                   padding: '28px 24px',
                   textAlign: 'left',
                   border: 'none',
-                  borderTop: activeVenue === i ? '1px solid var(--gold)' : '1px solid transparent',
+                  borderTop: activeVenue === i ? '1px solid var(--red)' : '1px solid transparent',
                   transition: 'all 0.3s ease',
                 }}
               >
                 <p
                   className="font-display mb-1"
-                  style={{ fontSize: '1.2rem', fontWeight: 300, color: activeVenue === i ? 'var(--gold)' : 'white' }}
+                  style={{ fontSize: '1.2rem', fontWeight: 300, color: activeVenue === i ? 'var(--red)' : 'white' }}
                 >
                   {venue.name}
                 </p>
@@ -99,7 +99,7 @@ export default function Events() {
                   <p className="section-label mb-1" style={{ fontSize: '0.55rem' }}>{item.label}</p>
                   <p
                     className="font-display text-white"
-                    style={{ fontSize: '1.1rem', fontWeight: 300, color: i === 0 ? 'var(--gold)' : 'white' }}
+                    style={{ fontSize: '1.1rem', fontWeight: 300, color: i === 0 ? 'var(--red)' : 'white' }}
                   >
                     {item.value}
                   </p>
@@ -126,7 +126,7 @@ export default function Events() {
               >
                 <span
                   className="font-display"
-                  style={{ fontSize: '0.75rem', color: 'var(--gold-dim)', fontStyle: 'italic', minWidth: 20 }}
+                  style={{ fontSize: '0.75rem', color: 'var(--red-dim)', fontStyle: 'italic', minWidth: 20 }}
                 >
                   {String(i + 1).padStart(2, '0')}
                 </span>
@@ -138,7 +138,7 @@ export default function Events() {
                 </p>
                 <span
                   className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  style={{ color: 'var(--gold)', fontSize: '0.8rem' }}
+                  style={{ color: 'var(--red)', fontSize: '0.8rem' }}
                 >
                   →
                 </span>
@@ -165,7 +165,7 @@ export default function Events() {
             <div
               key={i}
               className={`absolute w-8 h-8 ${pos}`}
-              style={{ borderColor: 'var(--gold)' }}
+              style={{ borderColor: 'var(--red)' }}
             />
           ))}
 
@@ -177,7 +177,7 @@ export default function Events() {
             style={{ fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', fontWeight: 300 }}
           >
             Let's Build Something{' '}
-            <em style={{ color: 'var(--gold)' }}>Unforgettable Together.</em>
+            <em style={{ color: 'var(--red)' }}>Unforgettable Together.</em>
           </h3>
           <p
             className="font-body mb-10 mx-auto"
@@ -192,7 +192,7 @@ export default function Events() {
               style={{
                 display: 'inline-block',
                 padding: '16px 40px',
-                background: 'var(--gold)',
+                background: 'var(--red)',
                 color: '#080808',
                 fontFamily: 'Syne, sans-serif',
                 fontSize: '0.65rem',
@@ -202,8 +202,8 @@ export default function Events() {
                 textDecoration: 'none',
                 transition: 'background 0.3s ease',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--gold-light)')}
-              onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--gold)')}
+              onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--red-light)')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--red)')}
             >
               Start a Conversation
             </a>
@@ -213,7 +213,7 @@ export default function Events() {
                 display: 'inline-block',
                 padding: '16px 40px',
                 background: 'transparent',
-                color: 'var(--gold)',
+                color: 'var(--red)',
                 fontFamily: 'Syne, sans-serif',
                 fontSize: '0.65rem',
                 fontWeight: 700,
@@ -225,7 +225,7 @@ export default function Events() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = 'rgba(201,169,110,0.1)'
-                e.currentTarget.style.borderColor = 'var(--gold)'
+                e.currentTarget.style.borderColor = 'var(--red)'
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'transparent'

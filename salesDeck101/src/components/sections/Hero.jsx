@@ -103,7 +103,7 @@ export default function Hero() {
         >
           {/* Location label */}
           <div ref={labelRef} className="flex items-center gap-4 mb-6 opacity-0">
-            <div style={{ width: 32, height: 1, background: 'var(--gold)' }} />
+            <div style={{ width: 32, height: 1, background: 'var(--red)' }} />
             <span className="section-label" style={{ fontSize: '0.6rem' }}>
               Downtown Dubai · United Arab Emirates
             </span>
@@ -129,7 +129,7 @@ export default function Hero() {
                 style={{
                   display: 'inline-block',
                   opacity: 0,
-                  color: char === '.' ? 'var(--gold)' : 'white',
+                  color: char === '.' ? 'var(--red)' : 'white',
                   whiteSpace: char === ' ' ? 'pre' : 'normal',
                 }}
               >
@@ -159,7 +159,7 @@ export default function Hero() {
               onClick={() => document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })}
               style={{
                 padding: '14px 32px',
-                background: 'var(--gold)',
+                background: 'var(--red)',
                 color: '#080808',
                 fontFamily: 'Syne, sans-serif',
                 fontSize: '0.65rem',
@@ -170,8 +170,8 @@ export default function Hero() {
                 opacity: 0,
                 transition: 'background 0.3s ease',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--gold-light)')}
-              onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--gold)')}
+              onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--red-light)')}
+              onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--red)')}
             >
               Book a Conversation
             </button>
@@ -180,7 +180,7 @@ export default function Hero() {
               style={{
                 padding: '14px 32px',
                 background: 'transparent',
-                color: 'var(--gold)',
+                color: 'var(--red)',
                 fontFamily: 'Syne, sans-serif',
                 fontSize: '0.65rem',
                 fontWeight: 700,
@@ -192,7 +192,7 @@ export default function Hero() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = 'rgba(201,169,110,0.1)'
-                e.currentTarget.style.borderColor = 'var(--gold)'
+                e.currentTarget.style.borderColor = 'var(--red)'
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'transparent'
@@ -213,7 +213,7 @@ export default function Hero() {
               <div key={i} style={{ opacity: 0 }}>
                 <p
                   className="font-display"
-                  style={{ fontSize: '1.5rem', fontWeight: 300, color: 'var(--gold)', lineHeight: 1 }}
+                  style={{ fontSize: '1.5rem', fontWeight: 300, color: 'var(--red)', lineHeight: 1 }}
                 >
                   {stat.value}
                 </p>
@@ -239,7 +239,7 @@ export default function Hero() {
                   style={{
                     width: '100%',
                     height: '40%',
-                    background: 'var(--gold)',
+                    background: 'var(--red)',
                     animation: 'scrollLine 2s ease-in-out infinite',
                   }}
                 />

@@ -34,7 +34,7 @@ export default function Navbar({ activeSection }) {
             style={{
               width: 1,
               height: 32,
-              background: 'var(--gold)',
+              background: 'var(--red)',
               opacity: 0.7,
             }}
           />
@@ -66,7 +66,7 @@ export default function Navbar({ activeSection }) {
                 letterSpacing: '0.2em',
                 fontWeight: 600,
                 fontFamily: 'Syne, sans-serif',
-                color: activeSection === item.id ? 'var(--gold)' : 'rgba(255,255,255,0.5)',
+                color: activeSection === item.id ? 'var(--red)' : 'rgba(255,255,255,0.5)',
                 textTransform: 'uppercase',
                 background: 'none',
                 border: 'none',
@@ -86,19 +86,19 @@ export default function Navbar({ activeSection }) {
             letterSpacing: '0.2em',
             fontWeight: 600,
             fontFamily: 'Syne, sans-serif',
-            color: 'var(--gold)',
+            color: 'var(--red)',
             background: 'transparent',
             border: '1px solid rgba(201,169,110,0.4)',
             padding: '10px 20px',
             textTransform: 'uppercase',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'var(--gold)'
+            e.currentTarget.style.background = 'var(--red)'
             e.currentTarget.style.color = '#080808'
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.background = 'transparent'
-            e.currentTarget.style.color = 'var(--gold)'
+            e.currentTarget.style.color = 'var(--red)'
           }}
         >
           Book a Conversation

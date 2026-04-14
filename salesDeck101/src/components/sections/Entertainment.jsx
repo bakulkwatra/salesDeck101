@@ -66,15 +66,15 @@ export default function Entertainment() {
               <div
                 className="absolute top-0 left-0 w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
-                  borderTop: '1px solid var(--gold)',
-                  borderLeft: '1px solid var(--gold)',
+                  borderTop: '1px solid var(--red)',
+                  borderLeft: '1px solid var(--red)',
                 }}
               />
               <div
                 className="absolute bottom-0 right-0 w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
-                  borderBottom: '1px solid var(--gold)',
-                  borderRight: '1px solid var(--gold)',
+                  borderBottom: '1px solid var(--red)',
+                  borderRight: '1px solid var(--red)',
                 }}
               />
 
@@ -88,7 +88,7 @@ export default function Entertainment() {
                   fontSize: '0.6rem',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
-                  color: 'var(--gold)',
+                  color: 'var(--red)',
                   fontFamily: 'Syne, sans-serif',
                 }}
               >
@@ -121,7 +121,7 @@ export default function Entertainment() {
             style={{ fontSize: 'clamp(1.2rem, 2vw, 1.8rem)', fontWeight: 300, maxWidth: 500 }}
           >
             Your brand, surrounded by experiences{' '}
-            <em style={{ color: 'var(--gold)' }}>people travel the world to see.</em>
+            <em style={{ color: 'var(--red)' }}>people travel the world to see.</em>
           </p>
           <button
             onClick={() => document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })}
@@ -129,7 +129,7 @@ export default function Entertainment() {
               flexShrink: 0,
               padding: '14px 32px',
               background: 'transparent',
-              color: 'var(--gold)',
+              color: 'var(--red)',
               fontFamily: 'Syne, sans-serif',
               fontSize: '0.65rem',
               fontWeight: 700,
@@ -139,12 +139,12 @@ export default function Entertainment() {
               transition: 'all 0.3s ease',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'var(--gold)'
+              e.currentTarget.style.background = 'var(--red)'
               e.currentTarget.style.color = '#080808'
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = 'transparent'
-              e.currentTarget.style.color = 'var(--gold)'
+              e.currentTarget.style.color = 'var(--red)'
             }}
           >
             Book an Activation →
