@@ -28,7 +28,7 @@ export default function Retail() {
           <div className="flex items-end">
             <p
               className="reveal font-body opacity-0"
-              style={{ fontSize: '1rem', color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}
+              style={{ fontSize: '1rem', color: 'rgba(255,255,255)', lineHeight: 1.8 }}
             >
               {retail.subheadline}
             </p>
