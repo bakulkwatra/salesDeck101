@@ -40,7 +40,7 @@ export default function Retail() {
           className="grid gap-px mb-24"
           style={{
             gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-            background: 'rgba(201,169,110,0.08)',
+            background: 'rgba(201,169,110,0.06)',
           }}
         >
           {retail.categories.map((cat, i) => (

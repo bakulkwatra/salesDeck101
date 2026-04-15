@@ -18,16 +18,16 @@ export const mallData = {
 
   retail: {
     headline: "Where the World's Greatest Brands Come First",
-    subheadline: 'Over 1,300 stores. From global flagships to regional exclusives — Dubai Mall is where brands make statements.',
+    subheadline: "Over 1,300 stores. From global flagships to regional exclusives — Dubai Mall is where brands make statements.",
     categories: [
-      { name: 'Fashion & Apparel', count: 350, icon: '◈' },
-      { name: 'Luxury & Designer', count: 120, icon: '◈' },
-      { name: 'Electronics & Tech', count: 80, icon: '◈' },
-      { name: 'Sports & Lifestyle', count: 95, icon: '◈' },
-      { name: 'Home & Interiors', count: 60, icon: '◈' },
-      { name: 'Beauty & Wellness', count: 150, icon: '◈' },
+      { name: "Fashion & Apparel", count: 350 },
+      { name: "Luxury & Designer", count: 120 },
+      { name: "Electronics & Tech", count: 80 },
+      { name: "Sports & Lifestyle", count: 95 },
+      { name: "Home & Interiors", count: 60 },
+      { name: "Beauty & Wellness", count: 150 },
     ],
-    featuredBrands: ['Louis Vuitton', 'Chanel', 'Hermès', 'Rolex', 'Apple', 'Galeries Lafayette', 'Bloomingdale\'s', 'Zara', 'H&M', 'Nike', 'Adidas', 'Gucci'],
+    featuredBrands: ["Louis Vuitton", "Chanel", "Hermès", "Rolex", "Apple", "Galeries Lafayette", "Bloomingdale's", "Zara", "H&M", "Nike", "Adidas", "Gucci"],
   },
 
   luxury: {
@@ -54,14 +54,14 @@ export const mallData = {
 
   entertainment: {
     headline: 'This Is Not a Mall. It Is a World.',
-    subheadline: 'Dubai Mall\'s entertainment ecosystem generates footfall no standalone retailer could. Your brand lives alongside world-class experiences.',
+    subheadline: "Dubai Mall's entertainment ecosystem generates footfall no standalone retailer could. Your brand lives alongside world-class experiences.",
     attractions: [
-      { name: 'Dubai Aquarium', description: 'The world\'s largest indoor aquarium — 10 million liters, 33,000 aquatic animals', stat: '10M liters' },
+      { name: 'Dubai Aquarium', description: "The world's largest indoor aquarium — 10 million liters, 33,000 aquatic animals", stat: '10M liters' },
       { name: 'Dubai Ice Rink', description: 'Olympic-standard ice rink in the heart of the mall, hosting shows and competitions', stat: 'Olympic size' },
       { name: 'VR Park', description: '15,000 sq ft virtual reality park with 30+ immersive experiences', stat: '30+ VR rides' },
       { name: 'KidZania', description: 'City-within-a-city learning experience for children — sold out daily', stat: '75K+ monthly' },
       { name: 'Reel Cinemas', description: '22 screens including IMAX and premium screening suites', stat: '22 screens' },
-      { name: 'Dubai Fountain Show', description: 'World\'s largest choreographed fountain — visible from Fashion Avenue', stat: '900ft span' },
+      { name: 'Dubai Fountain Show', description: "World's largest choreographed fountain — visible from Fashion Avenue", stat: '900ft span' },
     ],
   },
 
@@ -86,6 +86,97 @@ export const mallData = {
       subheadline: 'Talk to our commercial partnerships team to reserve your space, dates, and tailored package.',
     },
   },
+
+  // ── PHASE 2: SPONSORSHIP MODULE ──
+  sponsorship: {
+    headline: 'Partner With the Most Visited Place on Earth',
+    subheadline: "Sponsorship at Dubai Mall is not an ad placement. It's a cultural statement. Your brand, embedded in the world's most trafficked destination.",
+
+    audience: [
+      { label: 'Annual Visitors', value: '105M', sub: 'Surpasses every theme park globally' },
+      { label: 'Avg Household Income', value: 'Top 15%', sub: 'UAE & GCC visitor demographics' },
+      { label: 'International Visitors', value: '68%', sub: 'From 160+ nations' },
+      { label: 'Age 18–45', value: '61%', sub: 'Prime consumer spending bracket' },
+      { label: 'Social Media Reach', value: '2.4B+', sub: 'Annual impressions across platforms' },
+      { label: 'Dwell Time', value: '3.2 hrs', sub: 'Average per visit — 2× industry norm' },
+    ],
+
+    tiers: [
+      {
+        name: 'Title Partner',
+        tag: 'EXCLUSIVE · 1 AVAILABLE',
+        price: 'From AED 12M / year',
+        highlight: true,
+        description: 'The highest-visibility partnership at The Dubai Mall. Reserved for one brand per year.',
+        benefits: [
+          'Naming rights on one major venue or zone',
+          'Hero placement on all Digital Out-of-Home screens (400+ screens)',
+          'Grand Atrium anchor activation — up to 22,000 sq ft',
+          'Dedicated campaign integration across all Mall media channels',
+          'VIP access to all property events & celebrity appearances',
+          'Co-branded content production with Dubai Mall Studios',
+          'Global PR inclusion in all property announcements',
+        ],
+      },
+      {
+        name: 'Platinum Partner',
+        tag: 'UP TO 3 AVAILABLE',
+        price: 'From AED 4M / year',
+        highlight: false,
+        description: 'Premium visibility across key touchpoints with major activation rights.',
+        benefits: [
+          'Branded zone within Fashion Avenue or Grand Atrium',
+          'DOOH screen network — prime rotation (150+ screens)',
+          'Two major annual activation slots (up to 10,000 sq ft)',
+          'Social media integration with @TheDubaiMall (5M+ followers)',
+          'Sponsored content in Dubai Mall digital magazine',
+          'Preferred partner status for all retail & F&B activations',
+        ],
+      },
+      {
+        name: 'Activation Partner',
+        tag: 'OPEN AVAILABILITY',
+        price: 'From AED 500K',
+        highlight: false,
+        description: 'Targeted, high-impact activations in specific zones or around key calendar events.',
+        benefits: [
+          'Activation space in designated partner zones',
+          'Event-based sponsorship (DSF, Eid, Back to School, etc.)',
+          'Digital screen package — campaign-specific',
+          'Social amplification from Dubai Mall channels',
+          'Category exclusivity within activation period',
+        ],
+      },
+    ],
+
+    activationExamples: [
+      {
+        brand: 'FIFA World Cup 2022',
+        type: 'Title Activation',
+        result: '2M+ direct engagements, 48-day campaign',
+        image: '/images/sponsorship-activation.jpg',
+      },
+      {
+        brand: 'Apple Vision Pro',
+        type: 'Product Launch',
+        result: 'MENA regional debut, 3-day sellout experience',
+        image: '/images/sponsorship-aerial.jpeg',
+      },
+      {
+        brand: 'Formula E',
+        type: 'Fan Zone Partner',
+        result: '800K visitors over 3 days, global broadcast reach',
+        image: '/images/sponsorship-activation.jpg',
+      },
+    ],
+
+    cta: {
+      headline: "Let's Build Your Partnership",
+      subheadline: "Our commercial team will create a bespoke package aligned to your brand's objectives, timeline, and budget.",
+      email: 'partnerships@thedubaimall.com',
+      phone: '+971 4 448 0000',
+    },
+  },
 }
 
 export const navItems = [
@@ -96,4 +187,5 @@ export const navItems = [
   { id: 'dining', label: 'Dining' },
   { id: 'entertainment', label: 'Entertainment' },
   { id: 'events', label: 'Events' },
+  { id: 'sponsorship', label: 'Partner' },
 ]

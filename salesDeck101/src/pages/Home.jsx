@@ -5,6 +5,7 @@ import Luxury from '../components/sections/Luxury'
 import Dining from '../components/sections/Dining'
 import Entertainment from '../components/sections/Entertainment'
 import Events from '../components/sections/Events'
+import Sponsorship from '../components/sections/Sponsorship'
 
 export default function Home() {
   return (
@@ -16,30 +17,37 @@ export default function Home() {
       <Dining />
       <Entertainment />
       <Events />
+      <Sponsorship />
 
-      {/* Footer */}
       <footer
-        className="py-12 px-6 md:px-16 lg:px-24"
         style={{
+          padding: '48px',
           background: 'var(--bg)',
-          borderTop: '1px solid rgba(201,169,110,0.1)',
+          borderTop: '1px solid var(--border-subtle)',
         }}
       >
-        <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div
+          className="max-w-screen-xl mx-auto"
+          style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 24 }}
+        >
           <div>
-            <p
-              className="font-display text-white mb-1"
-              style={{ fontSize: '1.2rem', fontWeight: 300, letterSpacing: '0.15em' }}
-            >
+            <p style={{
+              fontFamily: 'Cormorant Garamond, serif',
+              fontSize: '1.1rem',
+              fontWeight: 300,
+              letterSpacing: '0.18em',
+              color: 'var(--text-primary)',
+              marginBottom: 4,
+            }}>
               THE DUBAI MALL
             </p>
-            <p className="font-body" style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.3)' }}>
+            <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontFamily: 'Syne, sans-serif' }}>
               Downtown Dubai, Financial Centre Road, Dubai, UAE
             </p>
           </div>
-          <div className="flex items-center gap-2">
-            <div style={{ width: 24, height: 1, background: 'rgba(201,169,110,0.4)' }} />
-            <p className="font-body" style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.2)', letterSpacing: '0.1em' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <div style={{ width: 20, height: 1, background: 'var(--border-mid)' }} />
+            <p style={{ fontSize: '0.62rem', color: 'var(--text-muted)', fontFamily: 'Syne, sans-serif', letterSpacing: '0.08em' }}>
               © 2025 Emaar Malls · Commercial Partnerships
             </p>
           </div>
