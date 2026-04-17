@@ -11,7 +11,7 @@ export default function Entertainment() {
       className="py-32 px-6 md:px-16 lg:px-24 relative overflow-hidden"
       style={{ background: 'var(--bg)' }}
     >
-      {/* Background pattern */}
+     
       <div
         className="absolute inset-0 pointer-events-none opacity-5"
         style={{
@@ -41,7 +41,6 @@ export default function Entertainment() {
           </p>
         </div>
 
-        {/* Attractions — large card grid */}
         <div
           className="grid gap-px"
           style={{
@@ -62,7 +61,7 @@ export default function Entertainment() {
               onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(201,169,110,0.04)')}
               onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--bg)')}
             >
-              {/* Animated corner accent */}
+   
               <div
                 className="absolute top-0 left-0 w-6 h-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{
@@ -78,7 +77,6 @@ export default function Entertainment() {
                 }}
               />
 
-              {/* Stat badge */}
               <div
                 className="inline-block mb-6"
                 style={{
@@ -111,7 +109,7 @@ export default function Entertainment() {
           ))}
         </div>
 
-        {/* Bottom CTA strip */}
+   
         <div
           className="reveal mt-16 opacity-0 flex flex-col md:flex-row items-center justify-between gap-6 py-10 px-10"
           style={{ borderTop: '1px solid rgba(201,169,110,0.15)', borderBottom: '1px solid rgba(201,169,110,0.15)' }}

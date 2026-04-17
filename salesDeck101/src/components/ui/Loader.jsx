@@ -8,7 +8,7 @@ export default function Loader({ onComplete }) {
   const [progress, setProgress] = useState(0)
 
   useEffect(() => {
-    // Animate progress bar
+
     const anim = anime({
       targets: { value: 0 },
       value: 100,
@@ -22,7 +22,7 @@ export default function Loader({ onComplete }) {
         }
       },
       complete: () => {
-        // Logo fade in
+     
         anime({
           targets: logoRef.current,
           opacity: [0, 1],
@@ -31,7 +31,7 @@ export default function Loader({ onComplete }) {
           easing: 'easeOutExpo',
           complete: () => {
             setTimeout(() => {
-              // Exit: slide up
+          
               anime({
                 targets: loaderRef.current,
                 translateY: [0, '-100%'],
@@ -54,7 +54,7 @@ export default function Loader({ onComplete }) {
       className="fixed inset-0 z-50 flex flex-col items-center justify-center"
       style={{ background: '#080808' }}
     >
-      {/* Animated grid lines */}
+      
       <div
         className="absolute inset-0 opacity-10"
         style={{
@@ -64,7 +64,7 @@ export default function Loader({ onComplete }) {
         }}
       />
 
-      {/* Logo */}
+
       <div ref={logoRef} className="text-center opacity-0 mb-16 relative z-10">
         <p className="section-label mb-4" style={{ color: 'var(--red)', letterSpacing: '0.3em' }}>
           THE
@@ -84,7 +84,7 @@ export default function Loader({ onComplete }) {
         </div>
       </div>
 
-      {/* Progress */}
+
       <div className="relative z-10 w-64">
         <div
           className="h-px mb-3 overflow-hidden"

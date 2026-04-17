@@ -12,7 +12,7 @@ export default function Events() {
       className="py-32 px-6 md:px-16 lg:px-24 relative"
       style={{ background: 'var(--surface)' }}
     >
-      {/* Gold glow at top */}
+   
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 pointer-events-none"
         style={{
@@ -45,7 +45,6 @@ export default function Events() {
           </p>
         </div>
 
-        {/* Venue selector */}
         <div className="reveal opacity-0 mb-16">
           <p className="section-label mb-6" style={{ fontSize: '0.6rem' }}>Activation Venues</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px" style={{ background: 'rgba(201,169,110,0.08)' }}>
@@ -78,7 +77,7 @@ export default function Events() {
             ))}
           </div>
 
-          {/* Venue detail panel */}
+    
           <div
             key={activeVenue}
             style={{
@@ -109,7 +108,7 @@ export default function Events() {
           </div>
         </div>
 
-        {/* Past events */}
+
         <div className="reveal opacity-0 mb-20">
           <p className="section-label mb-6" style={{ fontSize: '0.6rem' }}>Past Activations</p>
           <div className="space-y-0">
@@ -147,7 +146,7 @@ export default function Events() {
           </div>
         </div>
 
-        {/* Booking CTA — full width */}
+        
         <div
           className="reveal opacity-0 relative overflow-hidden p-16 text-center"
           style={{
@@ -155,7 +154,7 @@ export default function Events() {
             border: '1px solid rgba(201,169,110,0.25)',
           }}
         >
-          {/* Decorative corners */}
+  
           {[
             'top-0 left-0 border-t border-l',
             'top-0 right-0 border-t border-r',

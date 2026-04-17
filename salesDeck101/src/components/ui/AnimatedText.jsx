@@ -1,18 +1,7 @@
 import { useEffect, useRef } from 'react'
 import anime from 'animejs'
 
-/**
- * AnimatedText — staggered character/word reveal using anime.js
- * Props:
- *   text: string
- *   tag: 'h1'|'h2'|'h3'|'p' (default 'div')
- *   className: string
- *   type: 'chars'|'words'|'lines' (default 'chars')
- *   delay: number ms before animation starts
- *   stagger: number ms between each unit
- *   trigger: boolean — when true, animation fires
- *   duration: number ms
- */
+
 export default function AnimatedText({
   text = '',
   tag: Tag = 'div',

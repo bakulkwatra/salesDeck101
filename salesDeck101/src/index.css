@@ -1,179 +1,4 @@
-/* @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
 
-@theme {
-  --font-display: "Cormorant Garamond", serif;
-  --font-body: "Syne", sans-serif;
-}
-
-:root {
-  --bg: #080808;
-  --surface: #111111;
-  --surface-2: #1a1a1a;
-  --white: #ffffff;
-  --muted: rgba(255,255,255,0.45);
-  --muted-dim: rgba(255,255,255,0.2);
-  --red: #C44B2A;
-  --red-light: #D4694A;
-  --red-dim: #8B3318;
-}
-
-* {
-  cursor: none !important;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--bg);
-  color: var(--white);
-  font-family: 'Syne', sans-serif;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--red-dim);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--red);
-}
-
-#cursor {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  background: var(--red);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s ease, width 0.3s ease, height 0.3s ease;
-  mix-blend-mode: difference;
-}
-
-#cursor-follower {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  border: 1px solid rgba(196, 75, 42, 0.4);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99998;
-  transform: translate(-50%, -50%);
-  transition: all 0.15s ease;
-}
-
-#cursor.hovering {
-  width: 16px;
-  height: 16px;
-}
-
-#cursor-follower.hovering {
-  width: 56px;
-  height: 56px;
-  border-color: rgba(196, 75, 42, 0.7);
-}
-
-.text-gold-gradient {
-  background: linear-gradient(135deg, #C44B2A 0%, #D4694A 50%, #C44B2A 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.reveal-char {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(60px);
-}
-
-.gold-line {
-  width: 48px;
-  height: 1px;
-  background: var(--red);
-}
-
-.stat-number {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  font-size: clamp(3rem, 6vw, 5rem);
-  line-height: 1;
-  color: var(--red);
-  letter-spacing: -0.02em;
-}
-
-.section-label {
-  font-family: 'Syne', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--red);
-}
-
-.hover-underline {
-  position: relative;
-}
-.hover-underline::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background: var(--red);
-  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hover-underline:hover::after {
-  width: 100%;
-}
-
-.video-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(8, 8, 8, 0.3) 0%,
-    rgba(8, 8, 8, 0.1) 40%,
-    rgba(8, 8, 8, 0.5) 70%,
-    rgba(8, 8, 8, 0.95) 100%
-  );
-}
-
-.card-hover {
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
-}
-.card-hover:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(196, 75, 42, 0.2);
-}
-
-@keyframes borderGlow {
-  0%, 100% { border-color: rgba(196, 75, 42, 0.3); }
-  50% { border-color: rgba(196, 75, 42, 0.7); }
-}
-
-.border-glow {
-  animation: borderGlow 3s ease-in-out infinite;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-} */
 
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
@@ -253,7 +78,7 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--red-dim); }
 ::-webkit-scrollbar-thumb:hover { background: var(--red); }
 
-/* ── CUSTOM CURSOR ── */
+
 #cursor {
   position: fixed;
   width: 8px;
@@ -376,7 +201,7 @@ body {
   color: var(--red);
 }
 
-/* ── MOBILE MENU ── */
+
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -403,50 +228,7 @@ body {
 }
 .mobile-menu button:hover { color: var(--red); }
 
-/* ── CHATBOT PANEL ── */
-.chatbot-fab {
-  position: fixed;
-  bottom: 32px;
-  right: 32px;
-  z-index: 50;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--red);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #fff;
-}
-.chatbot-fab:hover {
-  transform: scale(1.08);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4);
-}
 
-.chatbot-panel {
-  position: fixed;
-  bottom: 96px;
-  right: 32px;
-  z-index: 50;
-  width: 360px;
-  max-height: 520px;
-  background: var(--surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.chatbot-panel.hidden {
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(12px);
-}
 
 /* ── ANIMATIONS ── */
 @keyframes borderGlow {
@@ -461,7 +243,7 @@ body {
 }
 .fade-in { animation: fadeIn 0.8s ease forwards; }
 
-/* ── RESPONSIVE ── */
+
 @media (max-width: 1024px) {
   .sidebar-nav { display: none !important; }
 }

@@ -31,7 +31,7 @@ export default function Dining() {
           </p>
         </div>
 
-        {/* Dining zones grid */}
+     
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ background: 'rgba(201,169,110,0.08)' }}>
           {dining.zones.map((zone, i) => (
             <div
@@ -45,7 +45,7 @@ export default function Dining() {
               onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(201,169,110,0.04)')}
               onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--surface-2)')}
             >
-              {/* Top line reveal */}
+        
               <div
                 className="absolute top-0 left-0 right-0 h-px"
                 style={{
@@ -93,7 +93,7 @@ export default function Dining() {
           ))}
         </div>
 
-        {/* Burj Khalifa view callout */}
+
         <div
           className="reveal mt-16 opacity-0 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 p-10"
           style={{

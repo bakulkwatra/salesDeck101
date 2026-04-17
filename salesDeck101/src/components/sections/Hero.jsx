@@ -48,15 +48,7 @@ export default function Hero() {
   return (
     <section id="hero" style={{ position: 'relative', width: '100%', height: '100vh', minHeight: 700, overflow: 'hidden' }}>
 
-      {/* ── VIDEO BACKGROUND ──
-          Option A (recommended): Download a free video from pexels.com/videos
-          search "Dubai aerial" or "luxury mall" — download MP4, place in /public/hero-bg.mp4
-          Then uncomment the <video> tag below and comment out the fallback div.
-
-          Option B: Uses a gradient fallback (works right now, no setup needed)
-      */}
-
-      {/* OPTION A — local video file (uncomment when you have the file) */}
+     
       
       <video
         autoPlay
@@ -70,14 +62,7 @@ export default function Hero() {
       </video>
      
 
-      {/* OPTION B — Gradient background (active by default) */}
-      {/* <div style={{
-        position: 'absolute',
-        inset: 0,
-        background: 'linear-gradient(160deg, #0a0808 0%, #1a0e0a 40%, #0a0808 100%)',
-      }} /> */}
-
-      {/* Subtle grid pattern */}
+      
       <div style={{
         position: 'absolute',
         inset: 0,
@@ -86,14 +71,14 @@ export default function Hero() {
         opacity: 0.6,
       }} />
 
-      {/* Dark overlay for text legibility */}
+
       <div style={{
         position: 'absolute',
         inset: 0,
         background: 'linear-gradient(to bottom, rgba(8,8,8,0) 0%, rgba(8,8,8,0) 30%, rgba(8,8,8,0.65) 65%, rgba(8,8,8,0.98) 100%)',
       }} />
 
-      {/* Main content */}
+      
       <div style={{
         position: 'absolute',
         inset: 0,
@@ -102,7 +87,7 @@ export default function Hero() {
         justifyContent: 'flex-end',
         padding: '0 clamp(24px, 6vw, 96px) clamp(64px, 10vh, 120px)',
       }}>
-        {/* Location label */}
+        
         <div ref={labelRef} style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 24, opacity: 0 }}>
           <div style={{ width: 32, height: 1, background: 'var(--red)' }} />
           <span className="section-label" style={{ fontSize: '0.58rem' }}>
@@ -110,7 +95,7 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Main tagline — char by char */}
+        
         <div
           ref={taglineRef}
           style={{
@@ -140,7 +125,7 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Sub tagline */}
+  
         <p
           ref={subRef}
           style={{
@@ -156,7 +141,7 @@ export default function Hero() {
           {mallData.subTagline}
         </p>
 
-        {/* CTAs */}
+
         <div ref={ctaRef} style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 56, flexWrap: 'wrap' }}>
           <button
             onClick={() => document.getElementById('events')?.scrollIntoView({ behavior: 'smooth' })}
@@ -200,7 +185,6 @@ export default function Hero() {
           </button>
         </div>
 
-        {/* Quick stats */}
         <div
           ref={statsRef}
           style={{

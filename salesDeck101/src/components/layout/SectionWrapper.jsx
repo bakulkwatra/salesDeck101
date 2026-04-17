@@ -2,9 +2,8 @@ import { useEffect, useRef } from 'react'
 import anime from 'animejs'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
-/**
- * SectionWrapper — wraps each section with scroll-triggered reveal
- * Children with class 'reveal' will animate in on scroll
+/** 
+ * note for self :Children with class 'reveal' will animate in on scroll
  */
 export default function SectionWrapper({ id, children, className = '' }) {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 })
@@ -17,7 +16,7 @@ export default function SectionWrapper({ id, children, className = '' }) {
     const section = ref.current
     if (!section) return
 
-    // Animate section label (gold small caps)
+    
     const label = section.querySelector('.section-reveal-label')
     if (label) {
       anime({
@@ -29,7 +28,7 @@ export default function SectionWrapper({ id, children, className = '' }) {
       })
     }
 
-    // Animate gold divider line
+    
     const line = section.querySelector('.section-reveal-line')
     if (line) {
       anime({
@@ -42,7 +41,7 @@ export default function SectionWrapper({ id, children, className = '' }) {
       })
     }
 
-    // Animate .reveal children with stagger
+
     const revealEls = section.querySelectorAll('.reveal')
     if (revealEls.length) {
       anime({
@@ -55,7 +54,7 @@ export default function SectionWrapper({ id, children, className = '' }) {
       })
     }
 
-    // Animate .reveal-left children
+
     const leftEls = section.querySelectorAll('.reveal-left')
     if (leftEls.length) {
       anime({

@@ -41,7 +41,7 @@ function StatCard({ value, suffix, label, description, index }) {
       onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(201,169,110,0.5)')}
       onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(201,169,110,0.15)')}
     >
-      {/* Number */}
+     
       <div className="flex items-end gap-1 mb-3">
         <span
           ref={numRef}
@@ -82,7 +82,7 @@ function StatCard({ value, suffix, label, description, index }) {
         {description}
       </p>
 
-      {/* Hover glow dot */}
+   
       <div
         className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         style={{ width: 4, height: 4, borderRadius: '50%', background: 'var(--red)', boxShadow: '0 0 12px var(--red)' }}
@@ -95,7 +95,7 @@ export default function WhyThisProperty() {
   return (
     <SectionWrapper id="why" className="py-32 px-6 md:px-16 lg:px-24" style={{ background: 'var(--bg)' }}>
       <div className="max-w-screen-xl mx-auto">
-        {/* Header */}
+      
         <div className="mb-20">
           <div className="flex items-center gap-4 mb-6">
             <div className="section-reveal-line gold-line" style={{ transformOrigin: 'left', transform: 'scaleX(0)' }} />
@@ -134,7 +134,7 @@ export default function WhyThisProperty() {
           </p>
         </div>
 
-        {/* Stats grid */}
+    
         <div
           className="grid gap-0"
           style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))' }}
@@ -144,7 +144,7 @@ export default function WhyThisProperty() {
           ))}
         </div>
 
-        {/* Pull quote */}
+      
         <div
           className="reveal mt-20 p-10 opacity-0"
           style={{

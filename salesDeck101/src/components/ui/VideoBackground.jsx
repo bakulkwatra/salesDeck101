@@ -1,13 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-/**
- * VideoBackground
- * Props:
- *   src: string — video URL or YouTube embed (use direct video file for best results)
- *   fallbackImage: string — image URL if video fails or on mobile
- *   overlay: boolean — dark gradient overlay
- *   overlayIntensity: 'light'|'medium'|'heavy'
- */
+
 export default function VideoBackground({
   src,
   fallbackImage,
@@ -60,7 +53,7 @@ export default function VideoBackground({
         />
       )}
 
-      {/* Overlay */}
+   
       {overlay && (
         <div
           className="absolute inset-0 video-overlay"
@@ -68,7 +61,6 @@ export default function VideoBackground({
         />
       )}
 
-      {/* Noise texture overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -77,7 +69,7 @@ export default function VideoBackground({
         }}
       />
 
-      {/* Content */}
+
       <div className="relative z-10">{children}</div>
     </div>
   )

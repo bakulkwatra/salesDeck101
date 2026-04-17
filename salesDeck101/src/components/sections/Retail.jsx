@@ -11,7 +11,7 @@ export default function Retail() {
       style={{ background: 'var(--surface)' }}
     >
       <div className="max-w-screen-xl mx-auto">
-        {/* Header split layout */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <div>
             <div className="flex items-center gap-4 mb-6">
@@ -35,7 +35,7 @@ export default function Retail() {
           </div>
         </div>
 
-        {/* Categories grid */}
+       
         <div
           className="grid gap-px mb-24"
           style={{
@@ -75,7 +75,7 @@ export default function Retail() {
           ))}
         </div>
 
-        {/* Featured brands marquee */}
+       
         <div className="reveal opacity-0 overflow-hidden">
           <p className="section-label mb-6" style={{ fontSize: '0.6rem' }}>
             Featured Brands

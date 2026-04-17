@@ -9,7 +9,7 @@ export default function Luxury() {
       id="luxury"
       className="relative py-32 px-6 md:px-16 lg:px-24 overflow-hidden"
     >
-      {/* Background image with overlay */}
+     
       <div
         className="absolute inset-0"
         style={{
@@ -25,7 +25,7 @@ export default function Luxury() {
 
       <div className="relative max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
-          {/* Left */}
+        
           <div>
             <div className="flex items-center gap-4 mb-6">
               <div className="section-reveal-line gold-line" style={{ transformOrigin: 'left', transform: 'scaleX(0)' }} />
@@ -44,7 +44,6 @@ export default function Luxury() {
               {luxury.subheadline}
             </p>
 
-            {/* Fashion Avenue callout */}
             <div
               className="reveal opacity-0 p-8"
               style={{
@@ -71,7 +70,7 @@ export default function Luxury() {
             </div>
           </div>
 
-          {/* Right — feature list */}
+          
           <div className="space-y-0">
             {luxury.features.map((feature, i) => (
               <div

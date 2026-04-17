@@ -4,7 +4,7 @@ import SectionWrapper from '../layout/SectionWrapper'
 import { mallData } from '../../data/content'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
-// Animated counter for audience stats
+
 function AudienceStat({ label, value, sub, index }) {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 })
   const animated = useRef(false)
@@ -92,7 +92,7 @@ function TierCard({ tier, index, isActive, onClick }) {
         if (!isActive) e.currentTarget.style.borderColor = 'var(--border-subtle)'
       }}
     >
-      {/* Highlight bar */}
+ 
       {tier.highlight && (
         <div style={{
           position: 'absolute',
@@ -148,7 +148,7 @@ function TierCard({ tier, index, isActive, onClick }) {
         {tier.description}
       </p>
 
-      {/* Expand indicator */}
+      
       <div style={{
         display: 'flex',
         alignItems: 'center',
@@ -177,7 +177,7 @@ export default function Sponsorship() {
       className="py-32 px-6 md:px-16 lg:px-24 relative"
       style={{ background: 'var(--bg)' }}
     >
-      {/* Top gold line */}
+      
       <div style={{
         position: 'absolute',
         top: 0, left: '10%', right: '10%',
@@ -186,7 +186,7 @@ export default function Sponsorship() {
         opacity: 0.5,
       }} />
 
-      {/* Phase 2 badge */}
+      
       <div style={{
         position: 'absolute',
         top: 32, right: 48,
@@ -203,7 +203,7 @@ export default function Sponsorship() {
 
       <div className="max-w-screen-xl mx-auto">
 
-        {/* ── HEADER ── */}
+        
         <div className="flex items-center gap-4 mb-6">
           <div className="section-reveal-line gold-line" style={{ transformOrigin: 'left', transform: 'scaleX(0)' }} />
           <span className="section-reveal-label section-label" style={{ opacity: 0 }}>
@@ -246,7 +246,7 @@ export default function Sponsorship() {
           </p>
         </div>
 
-        {/* ── AUDIENCE DATA ── */}
+       
         <div className="reveal" style={{ marginBottom: '5rem', opacity: 0 }}>
           <p className="section-label" style={{ fontSize: '0.58rem', marginBottom: '1.5rem' }}>
             Audience Intelligence
@@ -262,13 +262,13 @@ export default function Sponsorship() {
           </div>
         </div>
 
-        {/* ── PARTNERSHIP TIERS ── */}
+        
         <div style={{ marginBottom: '5rem' }}>
           <p className="section-label reveal" style={{ fontSize: '0.58rem', marginBottom: '1.5rem', opacity: 0 }}>
             Partnership Tiers
           </p>
 
-          {/* Tier selector */}
+      
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
@@ -287,7 +287,7 @@ export default function Sponsorship() {
             ))}
           </div>
 
-          {/* Benefits panel — expands below selected tier */}
+
           <div
             key={activeTier}
             style={{
@@ -361,7 +361,7 @@ export default function Sponsorship() {
           </div>
         </div>
 
-        {/* ── ACTIVATION EXAMPLES ── */}
+        
         <div style={{ marginBottom: '5rem' }}>
           <p className="section-label reveal" style={{ fontSize: '0.58rem', marginBottom: '1.5rem', opacity: 0 }}>
             Activation Case Studies
@@ -382,7 +382,7 @@ export default function Sponsorship() {
                   opacity: 0,
                 }}
               >
-                {/* Image */}
+                
                 <div style={{
                   height: 200,
                   overflow: 'hidden',
@@ -450,7 +450,7 @@ export default function Sponsorship() {
           </div>
         </div>
 
-        {/* ── CTA ── */}
+       
         <div
           id="sponsorship-cta"
           className="reveal"
@@ -463,7 +463,7 @@ export default function Sponsorship() {
             opacity: 0,
           }}
         >
-          {/* Corner accents */}
+          
           {['top-0 left-0', 'top-0 right-0', 'bottom-0 left-0', 'bottom-0 right-0'].map((pos, i) => (
             <div
               key={i}
